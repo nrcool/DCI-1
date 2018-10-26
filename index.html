@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>myWEBSIDE™</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="my-style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js'></script>
+    <script language="javascript" type="text/javascript" src="js.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <table class="tableleer" width="100%">
+            <td width="100px">
+            </td>
+            <td>
+                <p class="gross">myWEBSITE™</p>
+            </td>
+            <td width="200px">
+            </td>
+            <td width="700">
+                <form>
+                    <input type="text" class="sucheingabe" value="">
+                    <input type="submit" class="suchbutton" value="Search">
+                </form>
+            </td>
+        </table>
+    </div>
+
+    <div class="mittelrahmen">
+        <div class="links">
+            <nav>
+                <ul>
+                    <li><a class="link0" href="#">Home</a></li>
+                    <li><a class="link1" href="#">Tables</a></li>
+                    <li><a class="link2" href="#">Colum</a></li>
+                    <li><a class="link4" href="#">Movie</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="mitte">
+            <section></section>
+        </div>
+
+        <div class="rechts">
+            <figure class="figurebild">
+                <img class="figurebild" src="affe.png">
+                <figcaption class="figurebild">Hello :)</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Impressum | Contact </p>
+    </div>
+
+
+
+
+    <script>
+          $(document).ready(function () {
+
+             $("section").load("_home.html");
+
+             $('.link0').live('click', function () {
+                 $("section").load("_home.html");
+                 return false;
+             });
+
+             $('.link1').live('click', function () {
+                 $("section").load("_table.html");
+                 return false;
+             });
+
+             $('.link2').live('click', function () {
+                 $("section").load("_column.html");
+                 return false;
+             });
+
+             $('.link3').live('click', function () {
+                 $("section").html("Links");
+                 return false;
+             });
+
+             $('.link4').live('click', function () {
+                 $("section").html("<embed width='100%' height='400' src = 'https://www.youtube.com/embed/tgbNymZ7vqY'> ");
+                 return false;
+             });
+         });
+
+        
+    </script>
+
+</body>
+</html>
