@@ -61,34 +61,36 @@
 
 
     <script>
-        var tx1="Ich";
-        var txt2="Liebe";
-        document.write (tx1+txt2);
-        
-        var x=2;
-        var y=3;
-        var z= x+y;
-        
-        document.write (z)
-        
-        var text1 ="qool";
-        document.write(text1);
-        document.write("hello");
-        
-        function test1(){
-            alert("hello");
-            document.write("hello again");
+          $(document).ready(function () {
 
-        }
-        
-        function test1(s){
-        document.write(s);
+             $("section").load("_home.html");
 
-        }
-        
-        
-        
-        
+             $('.link0').live('click', function () {
+                 $("section").load("_home.html");
+                 return false;
+             });
+
+             $('.link1').live('click', function () {
+                 $("section").load("_table.html");
+                 return false;
+             });
+
+             $('.link2').live('click', function () {
+                 $("section").load("_column.html");
+                 return false;
+             });
+
+             $('.link3').live('click', function () {
+                 $("section").html("Links");
+                 return false;
+             });
+
+             $('.link4').live('click', function () {
+                 $("section").html("<embed width='100%' height='400' src = 'https://www.youtube.com/embed/tgbNymZ7vqY'> ");
+                 return false;
+             });
+         });
+
         
     </script>
 
