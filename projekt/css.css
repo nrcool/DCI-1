@@ -1,0 +1,347 @@
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        html,
+        body {
+            height: 100%;
+            font-family: Verdana;
+            padding: 0;
+            margin: 0;
+            background-color: #222;
+            background-image: url("cloud.png");
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+            background-attachment: fixed;
+        }
+
+        header {
+            z-index: 5;
+            opacity: 1;
+            top: 0;
+            padding: 0;
+            height: 100px;
+            width: 100%;
+            position: fixed;
+
+
+        }
+
+        #obencenter {
+            height: 100px;
+            border-bottom: 1px solid #15472f;
+            color: white;
+            background-color: #111;
+            width: 1000px;
+            padding: 0;
+            margin: 0 auto;
+        }
+
+        main {
+
+            height: 100%;
+            margin: 0 auto;
+            margin-top: 100px;
+            margin-bottom: 0px;
+            width: 1000px;
+        }
+
+        footer {
+            margin: 0 auto;
+            opacity: 1;
+            bottom: 0;
+            padding: 20px;
+            height: 100px;
+            width: 1000px;
+            position: relative;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background-color: rgba(11, 11, 11, .8);
+        }
+
+        h2 span {
+            margin-top: -100px;
+            /* Size of fixed header */
+            padding-bottom: 100px;
+            display: block;
+            height: 100px;
+
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+
+        #logo {
+            padding: 14px;
+
+            margin: 0;
+            height: 50px;
+            background-color: black;
+        }
+
+        #style {
+            /*-moz-box-shadow: inset 0 0 10px #000;
+            -webkit-box-shadow: inset 0 0 10px #000;
+            box-shadow: inset 0 0 10px #000;*/
+            border: 0px solid;
+            border-color: grey;
+            padding: 40px;
+            background-color: rgba(11, 11, 11, .8);
+            color: white;
+        }
+
+
+        #stylebegin100 {
+            border: 0px solid;
+            color: white;
+            height: 100%;
+            margin-bottom: -200px;
+            padding-bottom: 100px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+
+        }
+
+        #stylebegin100-2 {
+            margin: 0 auto;
+            text-align: center;
+
+            font-size: 40px;
+            /*
+            background-size: 100% 100%;
+            background-image: url("cloud.png");
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-attachment: fixed;
+            */
+            background-color: rgba(11, 11, 11, .8);
+            /*-moz-box-shadow: inset 0 0 10px #000;
+            -webkit-box-shadow: inset 0 0 10px #000;
+            box-shadow: inset 0 0 10px #000;*/
+            border: 0px solid;
+            border-color: grey;
+            height: 100%;
+            width: 100%;
+            padding-top: 15%;
+
+
+        }
+
+        .title {
+            border-top: 0px solid #111;
+            border-bottom: 0px solid #111;
+
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            margin: 0;
+            padding: 10px;
+            padding-left: 40px;
+            background-color: rgba(11, 70, 51, .7);
+        }
+
+
+
+
+        .nav-open {
+            display: none;
+        }
+
+        #nav {
+            border: 0px solid white;
+            position: relative;
+            float: left;
+            height: 50px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+
+
+        }
+
+        #nav ul {
+
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background-color: #194c19;
+
+        }
+
+        #nav ul li {
+            float: left;
+        }
+
+        #nav ul li.close {
+            display: none;
+        }
+
+
+        #nav ul li a {
+            height: 48px;
+            padding-top: 15px;
+            padding-left: 25px;
+            padding-right: 25px;
+            display: block;
+            border-left: 0px solid #333;
+            background-color: #111;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #nav ul li a:hover {
+            background: #15472f;
+            color: #fff;
+        }
+
+
+
+        @media screen and (max-width: 640px) {
+
+
+            /* Ändern bei Mobile */
+            main {
+                width: 100%;
+                margin-top: 50px;
+            }
+
+            #obencenter,
+            header {
+                height: 50px;
+            }
+
+            h2 span {
+                margin-top: -50px;
+                padding-bottom: 50px;
+                height: 50px;
+            }
+
+            #stylebegin100 {
+
+                margin-bottom: -100px;
+                padding-bottom: 50px;
+
+
+            }
+
+
+            /* ----------------- Mobile START --------------------*/
+            .nav-open {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 50px;
+                background: #222;
+                font-family: Arial, sans-serif;
+                display: block;
+                width: 100%;
+            }
+
+            .nav-open a {
+                padding: 10px 15px;
+                display: block;
+                color: #fff;
+                text-align: center;
+                text-decoration: none;
+            }
+
+            #nav {
+                position: fixed;
+                top: -200%;
+                left: 0;
+                float: none;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+
+
+
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                border-radius: 0;
+                -webkit-transition: all 0s ease-in-out;
+                -moz-transition: all 0s ease-in-out;
+                -o-transition: all 0s ease-in-out;
+                -ms-transition: all 0s ease-in-out;
+                transition: all 0s ease-in-out;
+            }
+
+            #nav:target {
+                top: 0;
+            }
+
+            #nav ul li {
+                float: none;
+                text-align: center;
+                border-bottom: 1px solid #555;
+            }
+
+            #nav ul li.close {
+                text-align: right;
+                display: block;
+            }
+
+            #nav ul li:last-child {
+                /* border-bottom: none; */
+            }
+
+            /* ----------------- Mobile Menü ENDE --------------------*/
+
+        }
+
+
+        .logomobile {
+            padding: 0px;
+            padding-left: 15px;
+        }
+
+        .hrstyle {
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+            border: 0;
+            height: 1px;
+            background-color: #777;
+        }
+
+
+        .newspaper {
+            -webkit-column-count: 3;
+            /* Chrome, Safari, Opera */
+            -moz-column-count: 3;
+            /* Firefox */
+            column-count: 3;
+            -webkit-column-gap: 40px;
+            /* Chrome, Safari, Opera */
+            -moz-column-gap: 40px;
+            /* Firefox */
+            column-gap: 40px;
+            -webkit-column-rule-style: solid;
+            /* Chrome, Safari, Opera */
+            -moz-column-rule-style: solid;
+            /* Firefox */
+            column-rule-style: solid;
+            -webkit-column-rule-width: 1px;
+            /* Chrome, Safari, Opera */
+            -moz-column-rule-width: 1px;
+            /* Firefox */
+            column-rule-width: 1px;
+            -webkit-column-rule-color: #15472f;
+            /* Chrome, Safari, Opera */
+            -moz-column-rule-color: #15472f;
+            /* Firefox */
+            column-rule-color: #15472f;
+        }
+
+
+        .bild {
+
+            width: 100%;
+            padding: 40px;
+
+        }
